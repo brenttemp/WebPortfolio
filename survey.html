@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <head>
+     <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+      <p id="description">Let me know what can I do better as a web developer?</p>
+    <form id="survey-form">
+      <div class="rowTab">
+        <div class="labels">
+             <label id="name-label" for="name">* Name: </label>
+        </div>
+        <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">* Age: </label>
+        </div>
+        <div class="rightTab">
+          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="visitorFreq">How frequently do you use my web sites?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="visitorFreq" class="dropdown">
+            <option disabled value>Pick one</option>
+            <option value="never">Never</option>
+            <option value="once">Once</option>
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+            <option value="unsure">I'm not sure</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userRating">* Would you recommend me as a web developer to you friend, co-worker, or employer?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Of course!<input name="radio-buttons" value="1" type="radio" class="userRatings" ></label></li>
+            <li class="radio"><label>Perhaps<input name="radio-buttons" value="2" type="radio" class="userRatings" ></label></li>
+            <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings" ></label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">How should I improve my web sites in the future (Check all that apply): </label>
+        </div>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Color scheme</label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Font style</label></li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Videos</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Social media</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">I welcome all comments or suggestions!</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+  </body>
+
+</html>
